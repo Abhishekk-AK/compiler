@@ -11,5 +11,5 @@ class CodeSubmissionForm(forms.ModelForm):
     language = forms.ChoiceField(choices = LANGUAGE_CHOICES)
 
     class Meta:
-        Model = CodeSubmission
+        model = CodeSubmission
         fields = ['language', 'code', 'input_data']
